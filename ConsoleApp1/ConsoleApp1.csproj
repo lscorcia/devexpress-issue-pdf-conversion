@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="document.docx" />
+    <None Remove="document2.docx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="document.docx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Document.Processor" Version="22.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <EmbeddedResource Include="document2.docx" />
+  </ItemGroup>
+
+</Project>
